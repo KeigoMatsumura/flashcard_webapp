@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Flash Card</title>
+	<link rel="stylesheet" type="text/css" href="flashcard.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="common.css"/> -->
+	<script type="text/javascript" src="flashcard.js"></script>
+</head>
+<body>
+		<p id="pageTitle">FLASH CARD</p>
+			<!-- ホームに戻るボタン -->
+				<button id="home-button" type="button" onclick="location.href='index.html'">Home</button>
+
+
+			<!-- 問題を保存するためのボタン -->
+
+				<!-- <button id="bookmark-button" type="button" onclick="marked()">Book Mark</button> -->
+			<br><br>
+
+
+			<!-- フラッシュカード本体 -->
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<!-- <link rel="stylesheet" type="text/css" href="animation.css"/> -->
+				<div class="front"> <!--style="background-image: url(https://unsplash.it/500/500/)"> -->
+				
+					<div class="inner">
+					<p id="showQuestion"></p>
+					<!-- <span id="showHints">ヒント：</span> -->
+					</div>
+				</div>
+				<div class="back">
+					<div class="inner">
+					<p id="showAnswer"></p>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+			<!-- 問題を変更するボタン -->
+			<div id="previous-button" type="button">◀︎</div>
+			<div id="next-button" type="button">▶︎</div>
+
+	<div id="echo_message"></div>
+</body>
+</html>
+	

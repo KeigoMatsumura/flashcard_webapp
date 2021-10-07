@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Edit</title>
+	<link rel="stylesheet" type="text/css" href="edit.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="common.css"/> -->
+	<script type="text/javascript" src="edit.js"></script>
+</head>
+<body>
+	<p id="pageTitle">FLASH CARD Edit</p>
+	
+	<!-- <p id="note">＊ How to edit yor flash card's list <br><br>
+		* ADD CARDs<br>
+		First, click "Add Blank" button as many as you want to create new blanks.
+		Second, Write down your questions and answers into these blanks you made then click "Save List" button to finish your adding cards.
+		<br>
+		* DELETE CARDs<br>
+		1.
+	</p> -->
+
+	<button class="button-style" id="home-button" onclick="location.href='./index.html'">Home</button>
+	<button class="button-style" id="start-game-button" onclick="location.href='./flashcard.html'">Start Game</button> 
+	<button class="button-style" id="add-button" onclick="addRow()">Add</button> 
+	<button class="button-style" id="save-button" onclick="saveCards()">Save List</button>
+
+			<body onload="start()">
+				<table id="main-table">
+				  <thead class="table-header">
+					<td class="number-column">No.</td>
+					<td class="question-column">Question</td>
+					<td class="answer-column">Answer</td>
+					<!-- <td class="answer-column">Action</td> -->
+				  </thead>
+				  <tbody id="show-list">
+				  </tbody>
+				</table>
+			  </body>
+</body>
+</html>
+	
